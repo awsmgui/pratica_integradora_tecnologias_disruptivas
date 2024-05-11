@@ -95,11 +95,11 @@ const ListarTarefa = () => {
                 <TableRow>
                     <TableCell>#</TableCell>
                     <TableCell>Título</TableCell>
-                    <TableCell align="right">Descrição</TableCell>
-                    <TableCell align="right">Data de Início</TableCell>
-                    <TableCell align="right">Data de Finalização</TableCell>
+                    <TableCell align="right">Description</TableCell>
+                    <TableCell align="right">Start Date</TableCell>
+                    <TableCell align="right">End Date</TableCell>
                     <TableCell align="right">Status</TableCell>
-                    <TableCell align="right">Recurso</TableCell>
+                    <TableCell align="right">Recurse</TableCell>
                     <TableCell align="left"></TableCell>
                     <TableCell align="left"></TableCell>
                 </TableRow>
@@ -134,8 +134,8 @@ const ListarTarefa = () => {
             </TableContainer>
         </CardContent>
         <CardActions>
-            <Button size="small" variant="contained" onClick={handleOpen}>Criar Tarefa</Button>
-            <Button size="small" variant="outlined">Cancelar</Button>
+            <Button size="small" variant="contained" onClick={handleOpen}>Create Task</Button>
+            <Button size="small" variant="outlined">Cancel</Button>
       </CardActions> 
     </Card>
     <div>

@@ -58,8 +58,8 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
     <Grid container spacing={2}>
       <Card sx={style}>
         <CardHeader
-          title="Tarefas"
-          subheader="Cadastro de Tarefas"
+          title="Tasks"
+          subheader="Task creator"
         /> 
         <CardContent sx={{
           width: '95%',
@@ -68,13 +68,13 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
           <Grid item xs={12}>
             <FormControl fullWidth>
               <Input id="tarefa_titulo" aria-describedby="tarefa_titulo_helper_text" value={tituloTarefa} onChange={e => { setTituloTarefa(e.target.value) }} />
-              <FormHelperText id="tarefa_titulo_helper_text">Título da Tarefa.</FormHelperText>
+              <FormHelperText id="tarefa_titulo_helper_text">Task Title</FormHelperText>
             </FormControl>
           </Grid>
           <Grid item xs={12}>  
             <FormControl fullWidth>
               <Input id="tarefa_descricao" aria-describedby="tarefa_descricao_helper_text" value={descricaoTarefa} onChange={e => { setDescricaoTarefa(e.target.value) }} />
-              <FormHelperText id="tarefa_descricao_helper_text">Descrição da Tarefa.</FormHelperText>
+              <FormHelperText id="tarefa_descricao_helper_text">Task Description</FormHelperText>
             </FormControl>
           </Grid>
           <Grid container spacing={2} mt={1}>
@@ -87,7 +87,7 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                     paddingLeft:'13px'
                   }} 
                 />
-                <FormHelperText id="tarefa_inicio_helper_text">Início da Tarefa.</FormHelperText>
+                <FormHelperText id="tarefa_inicio_helper_text">Task Start</FormHelperText>
               </FormControl>
             </Grid>  
             <Grid item xs={3}>  
@@ -99,12 +99,12 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                     paddingLeft:'13px'
                   }} 
                 />
-                <FormHelperText id="tarefa_fim_helper_text">Fim da Tarefa.</FormHelperText>
+                <FormHelperText id="tarefa_fim_helper_text">Task End</FormHelperText>
               </FormControl>
             </Grid>
             <Grid item xs={3}>  
               <FormControl fullWidth>
-                <InputLabel htmlFor="tarefa_recurso">Recurso</InputLabel>
+                <InputLabel htmlFor="tarefa_recurso">Recurse</InputLabel>
                 <Select
                   id="tarefa_recurso"
                   value={recursoTarefa}
@@ -116,9 +116,9 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                     fontWeight: 400,
                   }} 
                 >
-                  <MenuItem value={'Recurso 1'}>Recurso 1</MenuItem>
-                  <MenuItem value={'Recurso 2'}>Recurso 2</MenuItem>
-                  <MenuItem value={'Recurso 3'}>Recurso 3</MenuItem>
+                  <MenuItem value={'Recurso 1'}>Recurse 1</MenuItem>
+                  <MenuItem value={'Recurso 2'}>Recurse 2</MenuItem>
+                  <MenuItem value={'Recurso 3'}>Recurse 3</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
@@ -136,18 +136,18 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                     fontWeight: 400,
                   }} 
                 >
-                  <MenuItem value={'Aguardando'}>Aguardando</MenuItem>
-                  <MenuItem value={'Em Andamento'}>Em Andamento</MenuItem>
-                  <MenuItem value={'Concluída'}>Concluída</MenuItem>
+                  <MenuItem value={'Aguardando'}>Waiting</MenuItem>
+                  <MenuItem value={'Em Andamento'}>In Progress...</MenuItem>
+                  <MenuItem value={'Concluída'}>Concluded</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
             <Grid container spacing={2} pl={2} mt={2}>
               <Grid item xs={1}>
-                <Button size="small" variant="contained" onClick={handleSalvar}>Salvar</Button>
+                <Button size="small" variant="contained" onClick={handleSalvar}>Save</Button>
               </Grid>  
               <Grid item xs={1}>  
-                <Button size="small" variant="outlined" onClick={handleClose}>Cancelar</Button>  
+                <Button size="small" variant="outlined" onClick={handleClose}>Cancel</Button>  
               </Grid>
             </Grid>  
           </Grid>
