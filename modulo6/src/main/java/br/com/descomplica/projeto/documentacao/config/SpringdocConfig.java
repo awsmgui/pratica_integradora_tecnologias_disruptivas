@@ -13,12 +13,12 @@ public class SpringdocConfig {
 	@Bean
 	  public OpenAPI springShopOpenAPI() {
 	      return new OpenAPI()
-	              .info(new Info().title("API Restful com Documentação")
+	              .info(new Info().title("API Restful com Documentação para atividade pratica modulo 6")
 	              .description("Exemplo de API Restful utilizando Springdoc para documentação.")
-	              .version("1.0.0")
+	              .version("1.0.89")
 	              .license(new License().name("Apache 2.0").url("http://springdoc.org")))
 	              .externalDocs(new ExternalDocumentation()
-	              .description("Link do Repositório da Aplicação - APIRestful Documentation")
-	              .url("https://github.com/endereco-repositorio-api"));
+	              .description("Link do Repositório da Aplicação")
+	              .url("https://github.com/awsmgui/modulo6atividade"));
 	  }
 }

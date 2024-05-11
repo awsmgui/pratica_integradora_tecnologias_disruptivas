@@ -27,12 +27,12 @@ public class CategoriaController {
 	CategoriaService categoriaService;
 	
 	@GetMapping
-	@Operation(summary="Listar todas as categorias", description  = "Listagem de Categorias")
+	@Operation(summary="Listar todas as categorias", description  = "Category Lists")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "A requisição foi executada com sucesso."),
-			  @ApiResponse(responseCode = "400", description = "Requisição Inválida"), 
-			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar esse recurso."), 
-			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado.")})
+			  @ApiResponse(responseCode = "200", description = "sucess :)"),
+			  @ApiResponse(responseCode = "400", description = "oh no :("), 
+			  @ApiResponse(responseCode = "403", description = "oh no you do not have access to this. -O-"), 
+			  @ApiResponse(responseCode = "404", description = "oh no i could not found -_-")})
 	public ResponseEntity<List<Categoria>> getAll(){
 		List<Categoria> categorias = categoriaService.getAll();
 		if(!categorias.isEmpty())
