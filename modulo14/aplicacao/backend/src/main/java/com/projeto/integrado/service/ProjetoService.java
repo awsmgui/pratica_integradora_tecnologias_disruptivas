@@ -47,4 +47,8 @@ public class ProjetoService {
 			return false;
 		}
 	}
+
+    public Projeto getByDescricao(String descricao) {
+		return projetoRepository.findByProjetoDescricao(descricao).orElse(null) ;
+	}
 }

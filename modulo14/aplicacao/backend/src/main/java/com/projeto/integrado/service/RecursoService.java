@@ -43,4 +43,8 @@ public class RecursoService {
 			return false;
 		}
 	}
+
+	public Recurso getByNome(String nome) {
+        return recursoRepository.findByRecursoNome(nome).orElse(null);
+    }
 }
